@@ -51,4 +51,17 @@ Example workflow to refresh all the students of a course:
 * Run `./autocanvas-batch.py` to verify the list of to-be-deleted/added students.
 * Edit `params.py` again as follows:
   * `action`: Enter `new-active` (Warning: this action cannot be undone).
-* Run `./autocanvas-batch.py` again to actually refresh the course. 
+* Run `./autocanvas-batch.py` again to actually refresh the course.
+
+## GUI mode
+
+For a simple graphical interface run:
+
+```shell
+$ python canvas_gui.py
+```
+
+Enter your Canvas API URL and key, load the available courses and then
+add or remove students from the selected course.  The application caches
+course and enrollment information locally so it remains responsive even
+when working with large numbers of courses or students.
